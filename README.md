@@ -1,6 +1,7 @@
 =Pixabay Image Viewer App 📷
 
-A modern Android application to browse and view high-quality images from [Pixabay](https://pixabay.com/). The app leverages the latest technologies and best practices in Android development to deliver a smooth and responsive user experience.
+A modern Android application to browse and view high-quality images from [Pixabay](https://pixabay.com/).
+The app leverages the latest technologies and best practices in Android development to deliver a smooth and responsive user experience.
 
 🌟 Features :
 
@@ -14,7 +15,10 @@ A modern Android application to browse and view high-quality images from [Pixaba
 
 🧩 Dependency Injection: Powered by Dagger Hilt 2 for easy dependency management.
 
+
+
 🛠️ Libraries Used :
+
 Retrofit 2: For making network requests.
 
 Glide: For efficient image loading and caching.
@@ -32,6 +36,7 @@ View Model & liveData
 
 
 🖼️ Screenshots
+
 Login
 
 ![Screenshot_2024-11-23-18-02-02-263_com gamal Pixabay](https://github.com/user-attachments/assets/fdf9b14c-a3b1-4383-8af2-5b24a7d43ea1)
