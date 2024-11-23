@@ -1,20 +1,30 @@
-![gamal](https://github.com/user-attachments/assets/ea6c49b7-0fd0-4168-92e0-b3a97e122a12)Pixabay Image Viewer App 📷
+=Pixabay Image Viewer App 📷
 
 A modern Android application to browse and view high-quality images from [Pixabay](https://pixabay.com/). The app leverages the latest technologies and best practices in Android development to deliver a smooth and responsive user experience.
 
-🌟 Features
+🌟 Features :
+
 📜 Infinite Scrolling: Implemented using Paging 3 for seamless image loading.
+
 🗂 Auth Management: Save your data user locally using DataStore.
+
 📱 Responsive UI: Built with modern UI principles .
+
 🛠 Clean Architecture: Built using MVVM design pattern for better code organization.
+
 🧩 Dependency Injection: Powered by Dagger Hilt 2 for easy dependency management.
 
-🛠️ Libraries Used
+🛠️ Libraries Used :
 Retrofit 2: For making network requests.
+
 Glide: For efficient image loading and caching.
+
 Paging 3: For infinite scrolling.
+
 DataStore: For local data storage.
+
 Dagger Hilt: For dependency injection.
+
 View Model & liveData
 
 
