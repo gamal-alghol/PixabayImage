@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    tools:context=".ui.auth.LoginFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dip"
+        android:src="@drawable/pixabay" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="@string/Begin_your_journey"
+        android:textColor="@color/gray50"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:layout_marginTop="8dip"
+        android:layout_gravity="center"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/Have_an_account"
+            android:textColor="@color/gray50"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_log_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/login"
+            android:paddingStart="4dp"
+            android:textColor="#387CC7"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginLeft="16dip"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="start"
+        android:hint="@string/Name"
+
+        android:imeOptions="actionNext"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="@color/gray300"
+        android:textColor="@color/gray100"
+
+        android:drawableLeft="@drawable/outline_person_outline_24"
+        android:drawablePadding="8dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginLeft="16dip"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="start"
+        android:textColor="@color/gray100"
+
+        android:hint="@string/email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="@color/gray300"
+        android:drawableStart="@drawable/letter"
+        android:drawablePadding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+<com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dip"
+        android:layout_marginRight="16dip"
+        android:layout_marginLeft="16dip"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="start"
+        android:hint="@string/age"
+    android:textColor="@color/gray100"
+
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="@color/gray300"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:drawablePadding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="16dip"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="left"
+        android:textColor="@color/gray100"
+
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColorHint="@color/gray300"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="8dip"
+        app:endIconMode="password_toggle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dip"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="16dip"
+        android:background="@drawable/edit_round"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="start"
+
+        android:hint="@string/confirm_password"
+        app:endIconMode="password_toggle"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword"
+
+        android:textColor="@color/gray100"
+        android:padding="15dp"
+        android:selectAllOnFocus="true"
+        android:textColorHint="@color/gray300"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:drawableStart="@drawable/baseline_lock_24"
+        android:drawablePadding="8dip"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/green"
+        android:fontFamily="@font/roboto_medium"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+
+        android:text="@string/create_account"
+        android:textColor="#F0F8FC"
+        android:textSize="16sp"
+        app:cornerRadius="10dp" />
+
+
+
+</LinearLayout>
